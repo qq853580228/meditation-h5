@@ -1,0 +1,82 @@
+// ========== 蓝湖设计令牌 (Design Tokens) ==========
+// 画布尺寸: 375x812 (iPhone X @1x)
+
+// ---- 颜色 ----
+// 主色
+@color-primary: #333333;          // 探索 tab、精选冥想标题、卡片主文字
+@color-secondary: #434343;        // 查看全部按钮、按钮背景
+@color-text-gray: #717171;        // 辅助文字（副标题）
+@color-text-light: #C4C4C4;       // 搜索框占位符、未选中 tab
+@color-tab-inactive: #D7D5D5;     // 冥想/睡眠 tab、未选中分页指示
+@color-white: #FFFFFF;
+@color-black: #000000;
+
+// 功能色
+@color-accent-orange: #EF662F;    // NEW 标签文字
+@color-new-tag-bg: #FBDDD1;       // NEW 标签背景
+@color-card-bg-light: #E7EEFF;   // 听声日贴卡片背景（浅蓝）
+@color-avatar-gradient-start: #8C9BFF;  // 听声日贴头像渐变起始
+@color-avatar-gradient-end: #B1C5F2;    // 听声日贴头像渐变结束
+
+// 背景色
+@color-bg-page: #FFFFFF;
+@color-bg-search: #F4F4F4;        // 搜索框背景
+@color-bg-section: #FFFFFF;       // 精选冥想区域背景
+@color-panel-bg: #F7F8FA;         // 浅灰面板（用户卡、课程卡）
+@color-white-soft: #F4F4F4;       // Banner 副标题文字
+@color-divider: rgba(0, 0, 0, 0.05);
+@color-border-light: #DEDEDE;
+@color-dark-gray: #585757;        // 冥想入门指南标题
+
+// ---- 字距 ----
+// 依据蓝湖文本图层宽度推导（CSS letter-spacing 包含末字符间距）
+@letter-spacing-tab: 2px;       // 探索/冥想/睡眠、精选冥想
+@letter-spacing-card: 1.5px;    // 冥想卡片标题（差旅 15px）
+@letter-spacing-body: 1px;      // 按钮、标题、副标题
+@letter-spacing-caption: 0.5px; // 12px 说明文字、Banner 小标题、搜索占位符
+
+// ---- 字号 ----
+@font-size-xs: 12px;     // 副标题、辅助文字、时间
+@font-size-sm: 13px;     // 搜索占位符
+@font-size-base: 14px;   // 听声日贴标题、查看全部
+@font-size-md: 15px;     // 状态栏时间、卡片标题、Banner 副标题
+@font-size-lg: 16px;     // 冥想入门指南标题
+@font-size-xl: 18px;     // 精选冥想标题
+@font-size-xxl: 20px;    // Tab 文字、10 数字
+
+// ---- 行高 ----
+@line-height-tight: 1;          // 密集文字
+@line-height-normal: 1.5;
+
+// ---- 圆角 ----
+@radius-sm: 2px;
+@radius-md: 5px;
+@radius-lg: 10px;
+
+// ---- 间距 ----
+@spacing-xs: 4px;
+@spacing-sm: 8px;
+@spacing-md: 12px;
+@spacing-lg: 16px;
+@spacing-xl: 20px;
+@spacing-xxl: 24px;
+
+// ---- 布局 ----
+@container-width: 335px;   // 内容区宽度 (375 - 20*2)
+@page-padding: 20px;       // 页面左右内边距
+@tabbar-height: 62px;      // 底部导航内容高度（不含安全区）
+@safe-area-top: env(safe-area-inset-top);       // 真机状态栏占位
+@safe-area-bottom: env(safe-area-inset-bottom); // 真机底部安全区
+@page-bottom-space: calc(@tabbar-height + @safe-area-bottom + 20px);
+
+// ---- 切图命名 ----
+// banner-bg: https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng023381f5d0d62971680a1122930aeb587def8000823b6d06d2725596004d570f (335x159)
+// avatar: https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngf11ada429e625a8b35c43d788e073cb02b7964554026656051c1e6ddfe8a006e (55x55)
+// daily-cover: https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng3138ffb03ac6e2dc3c1727aafd2cc5bcdc9442e3f624ef272b5e387f06366194 (44x43)
+// card-1: https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng3110505e9424322667cdfc8da434ac4cd67629d53f188c9641a756c0c4e7e962 (100x99) - 差旅
+// card-2: https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngad5468577937b5a86904399929607b58dd42c9e89a232d8375e871b6d3fa2a0e (100x99) - 专注
+// card-3: https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngac48c61ae6b58d3148aa8b320a3661f39f7a0719ab2b2510757a228b07714ef8 (100x99) - 晚安
+// bottom-cover: https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngba40de8c242e50aba72d289422871e9d43671dd29fe8777f740e9ee3ed4c2a72 (375x122) - 冥想入门指南背景
+// tab-indicator-inactive: https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngdbc08247d27d898aefc52566afe79fff100299d8738b107f7b2f36464f526d9e (15x4) - 下划线
+// tab-indicator-active: https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngbd84aedb9e64fa48edf7148ef016f6b03bbaa468ad90c196827c974acda4ed17 (8x4) - 分页指示-激活
+// tab-indicator-dot: https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngf4a8c82c449b8bf2c136fbb1ffb8a305a044cc41dc8be6ae6c3e32f309576a43 (8x4) - 分页指示-未激活

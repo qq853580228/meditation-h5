@@ -1,0 +1,54 @@
+@import './variables.less';
+@import './vant-theme.less';
+
+// 全局 CSS 变量，供模板内联样式（如 Vant 组件 props）复用设计令牌
+:root {
+  --lh-color-primary: @color-primary;
+  --lh-color-text-gray: @color-text-gray;
+  --lh-color-text-light: @color-text-light;
+  --lh-color-accent: @color-accent-orange;
+  --lh-color-new-tag-bg: @color-new-tag-bg;
+  --lh-color-panel: @color-panel-bg;
+  --lh-color-page: @color-bg-page;
+  --lh-color-white: @color-white;
+  --lh-color-text-primary: @color-primary;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: @color-bg-page;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: @color-primary;
+  font-size: @font-size-base;
+  line-height: @line-height-normal;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button {
+  font-family: inherit;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 750px;
+  margin: 0 auto;
+  // 使用 clip 而非 hidden，避免创建滚动容器导致 position: sticky 失效
+  overflow-x: clip;
+}

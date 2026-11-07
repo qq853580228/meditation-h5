@@ -1,0 +1,69 @@
+@import './variables.less';
+
+// ========== Vant 4 主题变量覆盖 ==========
+// 以蓝湖设计令牌为准，将 Vant 默认主题映射到项目设计规范
+:root:root {
+  // ---- 基础色 ----
+  --van-primary-color: @color-primary;
+  --van-text-color: @color-primary;
+  --van-text-color-2: @color-text-gray;
+  --van-text-color-3: @color-text-light;
+  --van-active-color: @color-white-soft;
+  --van-background: @color-white;
+  --van-background-2: @color-white;
+  --van-border-color: @color-divider;
+  --van-danger-color: @color-accent-orange;
+
+  // ---- 字体 ----
+  --van-font-size-sm: @font-size-xs;
+  --van-font-size-md: @font-size-base;
+  --van-font-size-lg: @font-size-lg;
+
+  // ---- 圆角 ----
+  --van-radius-sm: @radius-md;
+  --van-radius-md: @radius-lg;
+  --van-radius-lg: @radius-lg;
+
+  // ---- 按钮 ----
+  --van-button-primary-background: @color-primary;
+  --van-button-primary-border-color: @color-primary;
+  --van-button-default-height: 32px;
+  --van-button-normal-font-size: @font-size-base;
+
+  // ---- 搜索 ----
+  --van-search-background: transparent;
+  --van-search-content-background: @color-bg-search;
+  --van-search-input-height: 34px;
+  --van-search-padding: 0;
+  --van-search-left-icon-color: @color-text-light;
+
+  // ---- 标签页 ----
+  --van-tabs-nav-background: transparent;
+  --van-tab-text-color: @color-text-gray;
+  --van-tab-active-text-color: @color-primary;
+  --van-tabs-bottom-bar-color: @color-primary;
+
+  // ---- 单元格 ----
+  --van-cell-font-size: @font-size-base;
+  --van-cell-vertical-padding: 14px;
+  --van-cell-group-inset-padding: 0;
+  --van-cell-group-inset-radius: @radius-lg;
+  --van-cell-group-inset-background: @color-white;
+
+  // ---- 进度条 ----
+  --van-progress-background: @color-bg-search;
+  --van-progress-color: @color-primary;
+
+  // ---- 空状态 ----
+  --van-empty-description-color: @color-text-gray;
+
+  // ---- 底部导航 ----
+  --van-tabbar-height: @tabbar-height;
+  --van-tabbar-z-index: 100;
+  --van-tabbar-background: @color-white;
+  --van-tabbar-item-text-color: @color-text-light;
+  --van-tabbar-item-active-color: @color-primary;
+  --van-tabbar-item-icon-size: 26px;
+  --van-tabbar-item-icon-margin-bottom: 4px;
+  --van-tabbar-item-font-size: 10px;
+}
